@@ -2,7 +2,15 @@
 
 function hybrid_operation_to_uneven(collection) {
 
-  //在这里写入代码
+  var result = [];
+		collection.map(num=>{
+			if(num%2===1){
+				num = num*3+5;
+				result.push(num);
+			}
+		});
+		result = result.reduce((sum,num)=>sum+num);
+		return result;
 }
 
 module.exports = hybrid_operation_to_uneven;

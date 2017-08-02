@@ -1,8 +1,14 @@
 'use strict';
 
 function double_to_one(collection) {
-
-  //在这里写入代码
+    collection = collection.join(",").split(",").map(x=>parseInt(x));
+		var result = [];
+		collection.forEach(num=>{
+			if (!result.includes(num)) {
+				result.push(num);
+			} 
+		});
+	return result;
 }
 
 module.exports = double_to_one;

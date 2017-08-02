@@ -1,8 +1,13 @@
 'use strict';
 
 function choose_even(collection) {
-
-  //在这里写入代码
+    var result = [];
+  collection.forEach( item=> {
+		if(!(item%2)){
+        result.push(item);
+		}
+	});
+	return result;
 }
 
 module.exports = choose_even;

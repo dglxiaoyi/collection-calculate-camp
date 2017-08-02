@@ -2,7 +2,8 @@
 
 function double_to_one(collection) {
 
-  //在这里写入代码
+    collection = collection.join(",").split(",").map(x=>parseInt(x));
+    return collection;
 }
 
 module.exports = double_to_one;
